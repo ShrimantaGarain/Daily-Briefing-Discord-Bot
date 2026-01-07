@@ -1,82 +1,81 @@
-📰 Daily Briefing Discord Bot
+# 📰 Daily Briefing Discord Bot
 
-A production-ready Discord bot that delivers daily news headlines and weather briefings with rich embeds, auto-scheduling, and dynamic weather visuals—optimized for Indian audiences 🇮🇳.
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Discord](https://img.shields.io/badge/discord-bot-5865F2)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-success)
+![Contributions](https://img.shields.io/badge/contributions-welcome-orange)
 
-🚀 Features
-🗞️ News Briefing
+A **production-ready Discord bot** that delivers **daily news and weather briefings** with rich embeds, smart scheduling, and dynamic weather visuals—optimized for Indian audiences 🇮🇳.
 
-🇮🇳 National headlines (India)
+---
 
-🌸 Local news (Kolkata & West Bengal)
+## ✨ Features
 
-Clean, clickable embeds
+### 🗞️ News Updates
+- 🇮🇳 National headlines (India)
+- 🌸 Local news (Kolkata & West Bengal)
+- Clean, clickable Discord embeds
+- Powered by **GNews API**
 
-Powered by GNews API
+### 🌦️ Weather Briefing
+- Current temperature & “feels like”
+- Humidity, wind speed, visibility
+- Year-on-year comparison
+- Powered by **OpenWeather** & **Visual Crossing**
 
-🌦️ Weather Intelligence
+### 🖼️ Dynamic Weather Images
+- Context-aware visuals based on:
+  - Weather condition
+  - Day/Night
+  - Season (Summer, Monsoon, Winter)
+- Powered by **Pexels API**
 
-Current temperature & “feels like”
+### ⏰ Auto Posting
+- Scheduled updates at:
+  - **07:00**
+  - **13:00**
+  - **18:00**
+  - **22:00** (IST)
+- Fully timezone-aware
 
-Humidity, wind speed, visibility
+---
 
-Year-on-year weather comparison
+## 🛠️ Tech Stack
 
-Powered by OpenWeather & Visual Crossing
+| Category | Tools |
+|-------|------|
+| Language | Python 3.10+ |
+| Discord | discord.py |
+| HTTP | aiohttp |
+| Config | python-dotenv |
+| APIs | GNews, OpenWeather, Visual Crossing, Pexels |
 
-🖼️ Smart Weather Visuals
+---
 
-Context-aware images based on:
+## 📁 Project Structure
 
-Weather conditions
+├── main.py # Discord bot source code
+├── .env # Environment variables (not committed)
+├── README.md # Documentation
 
-Day/Night
 
-Seasonal logic (Summer, Monsoon, Winter)
+---
 
-Powered by Pexels API
+## ⚙️ Environment Variables
 
-⏰ Automation
+Create a `.env` file in the project root:
 
-Auto-posts at:
-
-07:00
-
-13:00
-
-18:00
-
-22:00 (IST)
-
-Timezone-aware scheduling
-
-🛠️ Tech Stack
-Category	Tools
-Language	Python 3.10+
-Discord	discord.py
-Networking	aiohttp
-Config	python-dotenv
-APIs	GNews, OpenWeather, Visual Crossing, Pexels
-📁 Project Structure
-.
-├── main.py          # Discord bot entry point
-├── .env             # Environment variables (ignored)
-├── README.md        # Documentation
-
-⚙️ Environment Variables
-
-Create a .env file in the root directory:
-
+```env
 DISCORD_BOT_TOKEN=your_discord_bot_token
 GNEWS_API_KEY=your_gnews_api_key
 OPENWEATHER_API_KEY=your_openweather_api_key
 VISUALCROSSING_API_KEY=your_visualcrossing_api_key
 PEXELS_API_KEY=your_pexels_api_key
-AUTO_CHANNEL_ID=your_channel_id   # Optional (auto-posting)
+AUTO_CHANNEL_ID=your_channel_id   # Optional (for auto-posting)
+⚠️ The bot will not start if required environment variables are missing.
 
-
-❗ The bot will fail fast if required variables are missing.
-
-📦 Installation
+🚀 Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/yourusername/daily-briefing-discord-bot.git
 cd daily-briefing-discord-bot
@@ -89,31 +88,31 @@ python main.py
 
 🤖 Bot Commands
 Command	Description
-!dailynews	Sends latest news & weather
-!test	Runs a test briefing
-🌍 Default Configuration
+!dailynews	Sends news & weather briefing
+!test	Test command
+🌍 Default Settings
 
 City: Kolkata
 
 Timezone: Asia/Kolkata (IST)
 
-These values can be modified in the CONFIG section of main.py.
+You can modify these values in the CONFIG section of main.py.
 
-🔐 Security Best Practices
+🔐 Security Notes
 
-Never commit .env
+Never commit your .env file
 
-Rotate API keys periodically
+Rotate API keys regularly
+
+Limit Discord bot permissions
 
 Use environment variables in production
-
-Restrict Discord bot permissions
 
 📜 License
 
 This project is licensed under the MIT License.
 
-🌟 Acknowledgements
+🙌 Acknowledgements
 
 Discord.py
 
@@ -128,4 +127,15 @@ Pexels
 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to fork and submit a PR 🚀
+Fork the repo and submit a pull request 🚀
+
+
+---
+
+If you want, I can:
+- Add **dynamic repo badges** (stars, forks, issues)
+- Create a **`requirements.txt`**
+- Add **screenshots / demo GIFs**
+- Customize it with **your GitHub username**
+
+Just say the word 👍
